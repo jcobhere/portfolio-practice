@@ -38,13 +38,14 @@ header {
 #abt-me {
   height: 100vh;
   z-index: 2;
-  background-color: white;
+  background-color: black;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 40px;
+  gap: 60px;
+  color: white;
 
   p {
     width: 20%;
@@ -53,5 +54,48 @@ header {
 
   h2 {
     text-align: center;
+  }
+
+  img {
+    border-radius: 50%;
+    border: 5px solid white;
+  }
+}
+
+#hobbies {
+  width: 50%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0px;
+
+  p {
+    text-align: justify;
+    font-size: 16px;
+  }
+
+  img {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border: 5px solid black;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  #hobbies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+  }
+
+  p {
+    max-width: 60%;
   }
 }
