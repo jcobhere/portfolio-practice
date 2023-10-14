@@ -1,1 +1,51 @@
-/*# sourceMappingURL=styles.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header #logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+header #logo-img {
+  height: 100px;
+  position: static;
+}
+header img {
+  position: absolute;
+  height: 600px;
+  z-index: 0;
+}
+header img:nth-of-type(2n) {
+  height: 1000px;
+}
+
+#abt-me {
+  height: 100vh;
+  z-index: 2;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+#abt-me p {
+  width: 20%;
+  text-align: justify;
+}
+#abt-me h2 {
+  text-align: center;
+}/*# sourceMappingURL=styles.css.map */
